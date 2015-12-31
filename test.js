@@ -1,18 +1,17 @@
-'use strict';
-var test = require('ava');
-var numberIsNan = require('number-is-nan');
-var positiveZero = require('positive-zero');
-var negativeZero = require('negative-zero');
-Math.sinh = undefined;
-var mathSinh = require('./');
+import test from 'ava';
+import numberIsNan from 'number-is-nan';
+import positiveZero from 'positive-zero';
+import negativeZero from 'negative-zero';
 
-test(function (t) {
-	t.assert(numberIsNan(mathSinh(NaN)));
-	t.assert(positiveZero(mathSinh(+0)));
-	t.assert(negativeZero(mathSinh(-0)));
-	t.assert(mathSinh(Infinity) === Infinity);
-	t.assert(mathSinh(-Infinity) === -Infinity);
-	t.assert(mathSinh(0) === 0);
-	t.assert(mathSinh(1) === 1.1752011936438014);
-	t.end();
+Math.sinh = undefined;
+const fn = require('./');
+
+test(t => {
+	t.true(numberIsNan(fn(NaN)));
+	t.true(positiveZero(fn(+0)));
+	t.true(negativeZero(fn(-0)));
+	t.is(fn(Infinity), Infinity);
+	t.is(fn(-Infinity), -Infinity);
+	t.is(fn(0), 0);
+	t.is(fn(1), 1.1752011936438014);
 });
