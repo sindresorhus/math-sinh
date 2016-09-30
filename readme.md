@@ -1,8 +1,6 @@
 # math-sinh [![Build Status](https://travis-ci.org/sindresorhus/math-sinh.svg?branch=master)](https://travis-ci.org/sindresorhus/math-sinh)
 
-> ES2015 [`Math.sinh()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh) ponyfill
-
-> Ponyfill: A polyfill that doesn't overwrite the native method
+> ES2015 [`Math.sinh()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh) [ponyfill](https://ponyfill.com)
 
 
 ## Install
