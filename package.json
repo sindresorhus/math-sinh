@@ -1,6 +1,6 @@
 {
   "name": "math-sinh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES2015 Math.sinh() ponyfill",
   "license": "MIT",
   "repository": "sindresorhus/math-sinh",
